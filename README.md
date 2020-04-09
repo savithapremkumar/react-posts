@@ -20,7 +20,7 @@ npm run dev-server
 
 ## Live demo
 
-A demo of this app can be found [here](https://gifted-kepler-631253.netlify.com/)
+A demo of this app can be found [here](https://react-posts-loader.netlify.com/)
 
 ## License
 
