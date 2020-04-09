@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import axios from "../axios";
+import axios from "../constants/axios";
 import Post from "../components/Post/index";
+import Loader from "../components/Loader/index";
+import Error from "../components/Error/index";
+import { LoadingMessage } from "../constants/messages";
 
 export default class Posts extends Component {
   constructor(props) {
@@ -52,13 +55,9 @@ export default class Posts extends Component {
   }
   render() {
     return this.state.loading ? (
-      <div className="loading">Loading...</div>
+      <Loader message={LoadingMessage} />
     ) : this.state.error ? (
-      <div className="error">
-        {this.state.errorMsg !== ""
-          ? this.state.errorMsg
-          : " Sorry, an error occured, please refresh your page to try again..."}
-      </div>
+      <Error errorMsg={this.state.errorMsg} />
     ) : (
       <div className="posts">{this.state.posts}</div>
     );
