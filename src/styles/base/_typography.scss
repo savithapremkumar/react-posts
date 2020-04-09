@@ -1,0 +1,25 @@
+//Typography
+@font-face {
+  font-family: "400";
+  src: url("../assets/fonts/Montserrat-Regular.otf") format("oft"),
+    url("../assets/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: "500";
+  src: url("../assets/fonts/Montserrat-Medium.otf") format("oft"),
+    url("../assets/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: "700";
+  src: url("../assets/fonts/Montserrat-Bold.otf") format("oft"),
+    url("../assets/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+}

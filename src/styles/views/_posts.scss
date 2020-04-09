@@ -1,0 +1,56 @@
+.posts {
+  padding: 0 20px;
+  margin: 20px 0;
+
+  .post {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid $pale-blue;
+    border-radius: 2px;
+    .title {
+      padding: 5px 0;
+      text-transform: capitalize;
+    }
+    .body {
+      padding: 5px 0;
+      font-family: "400", sans-serif;
+    }
+    .comments {
+      font-family: "500", sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover {
+        color: $blue;
+      }
+
+      .comment {
+        color: $black;
+        display: none;
+        background-color: $gray;
+        border-radius: 2px;
+        padding: 5px;
+        margin: 5px 0;
+        &:hover {
+          color: $black;
+        }
+
+        .user {
+          font-family: "700", sans-serif;
+        }
+      }
+
+      &.show {
+        .comment {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .posts {
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+}

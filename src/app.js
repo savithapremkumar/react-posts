@@ -1,7 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/styles.scss";
+import "./styles/main.scss";
+import Posts from "./views/posts";
 
-const template = <p>Hello from react</p>;
+function App() {
+  return (
+    <div className="app">
+      <div className="header">JSON Placeholder Posts Loader</div>
+      <Posts />
+    </div>
+  );
+}
 
-ReactDOM.render(template, document.getElementById("root"));
+export default App;
