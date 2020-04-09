@@ -15,7 +15,7 @@ export default class Posts extends Component {
       errorMsg: "",
     };
   }
-  getPostsData() {
+  getPostsData = () => {
     axios
       .get(`/posts?_embed=comments`)
       .then((res) => {
@@ -49,7 +49,7 @@ export default class Posts extends Component {
           errorMsg: error,
         });
       });
-  }
+  };
   componentDidMount() {
     this.getPostsData();
   }

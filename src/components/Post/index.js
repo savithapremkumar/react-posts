@@ -7,13 +7,12 @@ export default class Post extends Component {
     this.state = {
       display: false,
     };
-    this.toggleVisiblity = this.toggleVisiblity.bind(this);
   }
-  toggleVisiblity() {
+  toggleVisiblity = () => {
     this.setState((prevState) => ({
       display: !prevState.display,
     }));
-  }
+  };
   render() {
     return (
       <div className="post">
