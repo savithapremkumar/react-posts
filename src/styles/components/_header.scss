@@ -1,0 +1,21 @@
+.header {
+  font-family: "700", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: $blue;
+  color: $white;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 20px;
+}
+@media (min-width: 1024px) {
+  .header {
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+  }
+}

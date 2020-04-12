@@ -3,4 +3,10 @@
 @import "base/normalize.scss";
 @import "base/common.scss";
 
+@import "components/error";
+@import "components/header";
+@import "components/loading";
+@import "components/scroll-to-top";
+@import "components/post";
+
 @import "views/posts";

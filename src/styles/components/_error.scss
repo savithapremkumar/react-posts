@@ -1,0 +1,15 @@
+.error {
+  margin: 20px 0;
+  text-align: center;
+  font-family: "700", sans-serif;
+  font-size: 18px;
+}
+
+.error {
+  background-color: $gray;
+  border-radius: 2px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
