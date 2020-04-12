@@ -18,6 +18,12 @@ Use the below command to spawn a local dev server and run the app.
 npm run dev-server
 ```
 
+Use the below command to run tests.
+
+```bash
+npm run test
+```
+
 ## Improvements
 
 - Possibly consider a load more button that only loads say for instance 20 items at a time, this would be for cases when the api returns a millions of results
