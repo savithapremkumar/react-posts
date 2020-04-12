@@ -23,7 +23,11 @@ export default class Post extends Component {
             className={this.state.display ? "comments show" : "comments"}
             onClick={this.toggleVisiblity}
           >
-            {this.props.comments.length} Comments
+            {this.props.comments.length} Comments{" "}
+            <span class="arrow-icon">
+              <i class="fas fa-angle-up"></i>
+              <i class="fas fa-angle-down"></i>
+            </span>
             {this.props.comments.map((item) => (
               <Comment key={item.id} body={item.body} user={item.name} />
             ))}

@@ -16,10 +16,16 @@
       font-family: "500", sans-serif;
       font-size: 14px;
       cursor: pointer;
+
+      .arrow-icon {
+        .fa-angle-up {
+          display: none;
+        }
+        margin-left: 5px;
+      }
       &:hover {
         color: $blue;
       }
-
       .comment {
         color: $black;
         display: none;
@@ -37,6 +43,14 @@
       }
 
       &.show {
+        .arrow-icon {
+          .fa-angle-up {
+            display: inline-block;
+          }
+          .fa-angle-down {
+            display: none;
+          }
+        }
         .comment {
           display: block;
         }
